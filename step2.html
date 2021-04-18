@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Send some beer</title>
+</head>
+<body>
+
+    <div class="container">
+<h1>Get your friend a beer</h1>
+    <form>
+
+<!-- customer info -->
+
+<fieldset>
+<legend>Your information</legend>
+
+<div class="form-control">  
+<label>Full name</label>
+<input id="fullname" type="text" name="fullname" placeholder="Enter fullname" required>
+</div>
+
+<div class="form-control">
+<label>Streetname</label>
+<span class="hint-user">must be between 5 - 10 characters</span>
+<input 
+id="streetname" 
+type="text" 
+name="streetname" 
+placeholder="Enter streetname and no." 
+minlenght="5" 
+maxlength="10" 
+required>
+
+<span class="error" id="err-user" aria-live="assertive"> invalid streetname</span>
+</div>
+
+<div class="form-control">
+<label>Zip</label>
+<input id="zip" type="number" name="zip" placeholder="Enter zipcode" required>
+</div>
+
+<div class="form-control">
+<label>City</label>
+<input id="city" type="text" name="city" placeholder="Enter city" required>
+</div>
+
+<div class="form-control">
+    <label>E-mail</label>
+    <span>We only use this to send an order confirmation</span>
+    <input id="email" type="email" name="email" placeholder="Enter e-mail" required>
+    </div>
+
+<div class="form-control">
+        <label>Phone no.</label>
+        <input id="phone" type="tel" name="phone" placeholder="Enter phone no." required>
+        </div>
+
+        <button class="step1"><a href="index.html">Step 1</a></button>
+        <button class="step2"><a href="step2.html">Step 2</a></button>
+        <button class="step3"><a href="step3.html">Step 3</a></button>
+        <button class="step4"><a href="step4.html">Step 4</a></button>
+   
+</fieldset>
+</form>
+</div>
+</body>
+</html>

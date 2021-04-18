@@ -80,14 +80,68 @@ input {
   padding-left: 15px;
   font-size: 12px;
   border-bottom-width: 2px;
-  transistion: all 0.3 ease;
+  transition: all 0.3 ease;
 }
 
-input:focus,
+/* input:focus,
 input:valid {
   border-color: #9b59b6;
-}
+} */
 
 span {
   font-size: 10px;
+}
+
+button {
+  width: 80px;
+  padding: 5px 2px;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+button:hover {
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* states */
+
+/* input[type="email"]:valid {
+  border-color: green;
+}
+
+input[type="email"]:invalid {
+  border-color: red;
+} */
+
+input:not(:placeholder-shown, :focus):invalid {
+  border-color: red;
+}
+
+input:not(:placeholder-shown, :focus):invalid + .error {
+  max-height: 2rem;
+}
+
+.error {
+    color: crimson;
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s max-height:
+}
+
+input::placeholder{
+    opacity: 0;
+}
+
+input:valid {
+  border-color: green;
 }
